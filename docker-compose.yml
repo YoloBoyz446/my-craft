@@ -1,0 +1,14 @@
+version: "3"
+
+service:
+  minecraft-server:
+    volumes:
+      -server-data:/server
+    build:
+      context:
+    ports:
+      - 25565:25565
+      - 25575:25575
+
+volumes:
+  server-data:  
